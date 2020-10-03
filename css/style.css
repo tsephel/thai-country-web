@@ -1,0 +1,315 @@
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body, html{
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: #EDECE8;
+
+}
+
+h1{
+	color: #000;
+	font-size: 300%;
+  	font-weight: 400;
+  	font-family: 'Courgette', cursive;
+    padding-bottom: 50px;
+
+}
+
+p{
+  color: #222121;
+  font-size: 100%;
+    font-weight: 400;
+    font-family: 'Courgette', cursive;
+    padding-bottom: 50px;
+}
+/*
+h1::before,
+h1::after {
+    display: inline-block;
+    content: "";
+    border-top: .3rem solid black;
+    width: 4rem;
+    margin: 0 1rem;
+    transform: translateY(-1rem);
+}*/
+
+hr{
+  border-bottom:1px solid #9C9583;
+}
+
+.padding{
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 200%;
+    font-weight: 200;
+  }
+
+  h1::before,
+  h1::after{
+    width: 2rem;
+  }
+
+}
+
+/* social icon */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.instagram {
+  background: #e4405f;
+  color: #C41200;
+}
+
+.phone {
+  background: #55ACEE;
+  color: #C41200;
+}
+
+
+/* --------navbar section ----------------*/
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 50px;
+        right: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 30%;
+        height: 100%;
+    }
+	
+	.navbar-collapse ul{
+		text-align: center;
+		padding-top: 50px;	
+	}
+	
+	.navbar-collapse ul li a{
+		font-size:150%;
+		font-weight:400;
+		padding: 10px 0px;
+	}
+
+    .navbar-collapse.collapsing {
+        right: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        right: 0;
+        transition: right 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: right 500ms ease-in-out;
+    }
+}
+
+
+/*-------hero section------------*/
+
+.hero { 
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg) no-repeat center center fixed;
+  display: table;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+
+
+.landing-text{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  font-family: 'Courgette', cursive;
+  
+}
+
+.landing-text h3{
+  font-size: 300%;
+  font-weight: 400;
+  color: #FFBD14;
+}
+
+.landing-text h2{
+  font-size: 500%;
+  font-weight: 700;
+  color: #FFBD14;
+}
+
+.hero button{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/*---------about us section --------*/
+.about{
+  margin-top: -50px;
+
+}
+
+.about .orderup{
+  background: #eee;
+  height: 400px;
+}
+
+
+.about .aboutus{
+  background: #eee;
+
+}
+
+.about img{
+  width: 100%;
+}
+
+.about button{
+  font-size: 20px;
+  font-weight: bold;
+  color: #BFB8A6;
+  border: 1px solid #BFB8A6;
+}
+
+
+/*----------------menu section-----------------*/
+.menu { 
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg) no-repeat center center fixed;
+  display: table;
+  width: 100%;
+  height: 60%;
+  position: relative;
+  background-size: cover;
+}
+
+.special-menu{
+  margin-top: -50px;
+}
+
+.menu-detail{
+  background: #eee;
+}
+
+
+/*-------menu-list section------------*/
+.hero-menu { 
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg) no-repeat center center fixed;
+  display: table;
+  width: 100%;
+  height: 60%;
+  position: relative;
+  background-size: cover;
+}
+
+.wrapper{
+  margin: 0px 100px;
+}
+
+.panel-heading {
+  padding: 0;
+	border:0;
+  background: black;
+}
+
+.panel-heading h4{
+  font-size: 300%;
+  font-weight: 400;
+
+}
+
+.panel-title>a, .panel-title>a:active{
+	display:block;
+	padding:15px;
+  color:#555;
+  font-size:16px;
+  font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+  word-spacing:3px;
+	text-decoration:none;
+}
+.panel-heading  a:before {
+   font-family: 'Glyphicons Halflings';
+   content: "\e114";
+   float: right;
+   transition: all 0.5s;
+}
+.panel-heading.active a:before {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	transform: rotate(180deg);
+} 
+
+@media(max-width:992px){
+	 .wrapper{
+	  width:100%;
+	} 
+
+}
+
+
+/*------------------footer ----------------*/
+.footer{
+  padding: 10px;
+  background-color: #0B1315;
+}
+
+.footer h2{
+  color: #DDCDB6;
+
+}
+
+.footer .col-lg-12 h2{
+  font-size: 15px;
+}
+
+.footer p{
+  color: #9C9583;
+}
+
+.footer .icon i{
+  color: #9C9583;
+}
